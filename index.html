@@ -21,13 +21,43 @@
         <div id="bio">
             <h2>About Me</h2>
             <p>
-                Hi, I'm Justin Alger, I'm in schooling to become a software engineer. I love building innovative projects and learning new programming languages. My goal is to make a meaningful contributions to the tech world.
+                Hi, I'm Justin Alger, I'm in schooling to become a software engineer. I love building innovative projects and learning new programming languages. My goal is to make meaningful contributions to the tech world.
             </p>
             <img src="images/DefinentlyMe.jpg" alt="Me" />
         </div>
         <div id="project-list">
             <h2>Projects</h2>
             <p>Check back soon for my latest work!</p>
+        </div>
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message-type">Type of Message:</label>
+                    <select id="message-type" name="message-type" required>
+                        <option value="business-inquiry">Business Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="general-question">General Question</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </main>
     <footer>
