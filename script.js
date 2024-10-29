@@ -20,13 +20,26 @@ const projectList = document.getElementById("project-list");
 projects.forEach(project => {
     const listItem = document.createElement('li');
     listItem.className = 'project';
+    
     const title = document.createElement('h2');
     const link = document.createElement('a');
     link.href = project.url;
     link.textContent = project.title;
     title.appendChild(link);
+    
     const description = document.createElement('p');
     description.textContent = project.description;
+    description.classList.add('description');
+
+    description.style.maxHeight = '0';
+    description.style.overflow = 'hidden';
+    description.style.transition = 'max-height 0.3s ease-out';
+
+    title.addEventListener('click', () => {
+        const isVisible = description.style.maxHeight != '0px';
+        description.style.maxHeight = isVisible ? '0' : '100px';
+    });
+    
     listItem.appendChild(title);
     listItem.appendChild(description);
     projectList.appendChild(listItem);
