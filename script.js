@@ -6,7 +6,7 @@ const projects = [
     },
     {
         title: "Weather App",
-        url: "#",
+        url: "weatherApp.html",
         description: "A weather application that fetches real-time data from a weather API to display current weather conditions."
     },
     {

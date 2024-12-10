@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Logan, Utah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto mt-10 p-4 bg-white rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-center text-blue-500">Weather in Logan, Utah</h1>
+
+        <div id="weather-info" class="mt-6 text-center">
+            <p class="text-lg text-gray-700">Loading...</p>
+        </div>
+
+        <div id="error-message" class="mt-6 text-center text-red-500 hidden">
+        </div>
+    </div>
+</body>
+
+</html>

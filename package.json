@@ -7,5 +7,11 @@
     "dev": "vite"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^5.4.11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
 }
